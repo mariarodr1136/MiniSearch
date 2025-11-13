@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:angular-google-clone": "node dist/angular-google-clone/server/server.mjs"
+    "build:ssr": "ng build && ng run angular-google-clone:server",
+    "serve:ssr": "node dist/angular-google-clone/server/main.js",
+    "prerender": "ng run angular-google-clone:prerender"
   },
   "private": true,
   "dependencies": {
