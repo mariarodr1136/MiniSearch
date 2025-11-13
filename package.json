@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run angular-google-clone:build:production && ng run angular-google-clone:server:production",
-    "serve:ssr": "node dist/angular-google-clone/server/main.js"
+    "build:ssr": "ng build && ng build --configuration=server",
+    "serve:ssr": "node dist/angular-google-clone/server/main.mjs"
   },
   "private": true,
   "dependencies": {
